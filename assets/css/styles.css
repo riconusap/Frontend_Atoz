@@ -679,6 +679,68 @@ input {
   font-size: 1.2rem;
 }
 
+/*=============== SPONSORS ===============*/
+.sponsor__container {
+  -ms-grid-columns: (minmax(110px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  justify-items: center;
+  row-gap: 3.5rem;
+  margin-bottom: var(--mb-1-25);
+}
+
+.sponsor__content:hover .sponsor__img {
+  -webkit-filter: invert(0.5);
+          filter: invert(0.5);
+}
+
+.sponsor__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.sponsor__content p {
+  text-align: center;
+  color: var(--title-color);
+  font-size: 14px;
+}
+
+.sponsor__img {
+  width: 90px;
+  -webkit-filter: invert(0.7);
+          filter: invert(0.7);
+  -webkit-transition: var(--img-transition);
+  transition: var(--img-transition);
+}
+
+.sponsor__title {
+  margin-bottom: var(--mb-1-25);
+}
+
+.sponsor__title .title__text, .sponsor__title .title__subtitle {
+  margin-bottom: var(--mb-1-25);
+  text-align: center;
+  color: var(--title-color);
+}
+
+.sponsor__title .title__text {
+  font-size: 20px;
+}
+
+.sponsor__title .title__subtitle {
+  font-size: 16px;
+}
+
 /*=============== SCROLL BAR ===============*/
 ::-webkit-scrollbar {
   width: .60rem;
