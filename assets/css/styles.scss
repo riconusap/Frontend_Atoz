@@ -430,6 +430,7 @@ input{
     }
     &__img{
         transition: var(--img-transition);
+        width: 200px;
     }
     &__content,
     &__title{
@@ -518,11 +519,14 @@ input{
 
 /*=============== MEDIA QUERIES ===============*/
 /* For small devices */
-@media screen and (max-width: 340px){
+@media screen and (max-width: 360px){
     .place{
         &__container{
-            grid-template-columns: max-content;
+            grid-template-columns: repeat(1, max-content);
             justify-content: center;
+        }
+        &__img{
+            width: 200px;
         }
     }
 
@@ -542,13 +546,14 @@ input{
 }
 
 /* For medium devices */
-@media screen and (min-width: 568px){
+@media screen and (min-width: 411px){
     .place{
         &__container{
-            grid-template-columns: repeat(3, max-content);
+            grid-template-columns: repeat(2, max-content);
         }
     }
 }
+
 
 @media screen and (min-width: 768px){
     body{
@@ -636,6 +641,7 @@ input{
     }
     .place__container{
         padding-top: 2rem;
+        grid-template-columns: repeat(3, max-content);
     }
 }
 /* For large devices */
@@ -674,6 +680,7 @@ input{
     }
     .place{
         &__container{
+            grid-template-columns: repeat(3, max-content);
             gap: 3rem 2rem;
         }
         &__card, 
