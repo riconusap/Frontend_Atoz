@@ -338,11 +338,13 @@ input{
 
 /*=============== contact ===============*/
 .contact{
+    margin-bottom: var(--mb-2-5);
     &__img{
         position: absolute;
         width: 100%;
         height: 50vh;
         object-fit: cover;
+        
     }
     &__data__container_cont{
         display: flex;
@@ -553,7 +555,7 @@ input{
         grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
         justify-items: center;
         row-gap: 3.5rem;
-        margin-bottom: var(--mb-1-25);
+        margin-bottom: var(--mb-2-5);
     }
     &__content:hover .sponsor__img, &__content:hover .content__title{
         filter: invert(.5);

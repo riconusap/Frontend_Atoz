@@ -373,6 +373,10 @@ input {
 }
 
 /*=============== contact ===============*/
+.contact {
+  margin-bottom: var(--mb-2-5);
+}
+
 .contact__img {
   position: absolute;
   width: 100%;
@@ -665,7 +669,7 @@ input {
       grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
   justify-items: center;
   row-gap: 3.5rem;
-  margin-bottom: var(--mb-1-25);
+  margin-bottom: var(--mb-2-5);
 }
 
 .sponsor__content:hover .sponsor__img, .sponsor__content:hover .content__title {
