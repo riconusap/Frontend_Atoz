@@ -688,7 +688,7 @@ input {
   margin-bottom: var(--mb-1-25);
 }
 
-.sponsor__content:hover .sponsor__img {
+.sponsor__content:hover .sponsor__img, .sponsor__content:hover .content__title {
   -webkit-filter: invert(0.5);
           filter: invert(0.5);
 }
@@ -713,6 +713,8 @@ input {
   text-align: center;
   color: var(--title-color);
   font-size: 14px;
+  -webkit-filter: invert(0.7);
+          filter: invert(0.7);
 }
 
 .sponsor__img {
