@@ -1,0 +1,87 @@
+footer{
+    background-color: var(--first-color);
+    padding: 32px;
+    
+    .footer__container{
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+    justify-content: space-between;
+    
+    
+        &__left{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 1.5rem;
+            .subtitle{
+                color: var(--white-color);
+            }
+        }
+        &__right{
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+                
+            &__data{
+                display: flex;
+                flex-direction: column;
+                align-items: flex-end;
+                column-gap: 1.5rem;
+                row-gap: .5rem;
+                .social__links{
+                    color: var(--white-color);
+                    display: flex;
+                    align-items: center;
+                    column-gap: .5rem;
+                    justify-content: space-between;
+                    width: 100px;
+                    
+                }
+            }
+        }
+    }
+    .copyright{
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 360px){
+    footer{
+        .footer__container{
+            flex-direction: column;
+            margin-bottom: var(--mb-1-5);
+            row-gap: 1.5rem;
+            &__right{
+                justify-content: center;
+                &__data{
+                    flex-direction: row;
+                    .social__links{
+                        width: auto;
+                    }
+                }
+            }
+        }
+    }
+}
+
+/* For medium devices */
+@media screen and (max-width: 411px){
+    footer{
+        .footer__container{
+            flex-direction: column;
+            margin-bottom: var(--mb-1-5);
+            row-gap: 1.5rem;
+            &__right{
+                justify-content: center;
+                &__data{
+                    flex-direction: row;
+                }
+            }
+        }
+    }
+}
+
+
+
+
